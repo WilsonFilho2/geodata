@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,10 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geodata</title>
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
 </head>
 <body>
     <header>
-        <h1>Bem vindo ao Geodata</h1>
+        <hgroup>
+            <h1>
+                Geodata
+            </h1>
+        </hgroup>
+        <nav>
+            <p><a href="{% url 'america' %}">América</a></p>
+            <a href="{% url 'europa' %}">Europa</a>
+        </nav>
     </header>
     <main>
         <p>Aqui no Geodata, você encontra informações sobre alguns países de alguns continentes</p>
