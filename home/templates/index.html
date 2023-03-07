@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geodata</title>
+</head>
+<body>
+    <header>
+        <h1>Bem vindo ao Geodata</h1>
+    </header>
+    <main>
+        <p>Aqui no Geodata, você encontra informações sobre alguns países de alguns continentes</p>
+        <p>Navegue e descubra mais sobre esses países</p>
+        <!--Tentei fazer uma boa introdução-->
+        <nav>
+            <p><a href="{% url 'america' %}">Informações de países da América</a></p>
+            <a href="{% url 'europa' %}">Informações de países da Europa</a>
+        </nav>
+    </main>
+</body>
+</html>
