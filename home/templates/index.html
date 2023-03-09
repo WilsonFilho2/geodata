@@ -12,21 +12,26 @@
     <header>
         <hgroup>
             <h1>
-                Geodata
+                Geodata -- paises do mundo
             </h1>
         </hgroup>
         <nav>
             <p><a href="{% url 'america' %}">América</a></p>
-            <a href="{% url 'europa' %}">Europa</a>
+            <p><a href="{% url 'europa' %}">Europa</a></p>
         </nav>
     </header>
     <main>
-        <p>Aqui no Geodata, você encontra informações sobre alguns países de alguns continentes</p>
-        <p>Navegue e descubra mais sobre esses países</p>
+        <section>
+            <div class="img">
+                <img src="{% static 'home/img/mundo.jpg' %}" alt="">
+            </div>
+            <p>Aqui no Geodata, você encontra informações sobre alguns países de alguns continentes</p>
+            <p>Navegue e descubra mais sobre esses países</p>
+        </section>
         <!--Tentei fazer uma boa introdução-->
         <nav>
             <p><a href="{% url 'america' %}">Informações de países da América</a></p>
-            <a href="{% url 'europa' %}">Informações de países da Europa</a>
+            <p><a href="{% url 'europa' %}">Informações de países da Europa</a></p>
         </nav>
     </main>
 </body>
